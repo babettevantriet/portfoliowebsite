@@ -1,0 +1,117 @@
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-areas: 
+        "topnav  topnav"
+        "mainrechts  mainrechts"
+        "mainlinks  mainlinks"
+        "aboutme aboutme"
+        "title title"
+        "ad1   ad1"
+        "ad2   ad2"
+        "ad3   ad3"
+        "foot  foot"; 
+}
+
+.mainlinks{
+  grid-area: mainlinks;
+}
+
+.title{
+  grid-area: title;
+}
+
+.mainrechts{
+ grid-area: mainrechts;
+}
+
+#myTopnav{
+  grid-area: topnav;
+}
+
+.aboutme{
+  grid-area: aboutme;
+}
+.ad1 {
+  grid-area: ad1;
+}
+.ad2 {
+  grid-area: ad2;
+}
+
+.ad3{
+  grid-area: ad3;
+}
+
+.foot {
+  grid-area: foot;
+}
+
+.empty{
+  grid-area: empty;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media only screen and (min-width: 601px){
+
+  body{
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+          "topnav topnav topnav topnav topnav topnav"
+          "mainlinks mainlinks mainlinks mainrechts mainrechts mainrechts"
+          "aboutme aboutme aboutme aboutme aboutme aboutme"
+          "title title title title title title"
+          "ad1 ad1 ad2  ad2  ad3 ad3"
+          "foot foot foot foot foot foot"; 
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1000px){
+   body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+          "topnav topnav topnav topnav topnav topnav"
+          "mainlinks mainlinks mainlinks mainlinks mainrechts mainrechts"
+          "aboutme aboutme aboutme aboutme aboutme aboutme"
+          "title title title title title title"
+          "ad1 ad1 ad2  ad2  ad3 ad3"
+          "foot foot foot foot foot foot"; 
+  }
+
+}
+
+@media only screen and (min-width: 2000px){
+   body{
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+          "empty topnav topnav topnav topnav topnav topnav empty"
+          "empty mainlinks mainlinks mainlinks mainrechts mainrechts mainrechts empty"
+          "empty aboutme aboutme aboutme aboutme aboutme aboutme empty"
+          "empty title title title title title title empty"
+          "empty ad1 ad1 ad2  ad2  ad3 ad3 empty"
+          "empty foot foot foot foot foot foot empty"; 
+  }
+
+}
+
+
+
+
+
